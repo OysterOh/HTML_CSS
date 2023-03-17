@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[value=hello] {
+            width: 200px;
+            color: blue;
+        }
+        /* hello 파란색 */
+
+        input[type=password]{
+            color: red;
+            width: 100px;
+        }
+        /* password 값 가려진채로 빨간색 */
+
+        input[disabled]{
+            opacity: 0.2;
+        }
+        /* disabled: 비활성요소(활성하거나 포커스를 받을 수 없는 요소) */
+
+        button[class^=btn-]{   
+            font-weight: bold;
+            border-radius: 20px;
+        }
+        /* btn으로 시작하는 class 폰트 굵게, 경계라인 둥글게 */
+
+        button[class$=success]{   
+            background: green;
+        }
+        /* success로 끝나는 class 초록색 */
+    </style>
+</head>
+<body>
+    
+    <input type="text" value="hello">
+    <input type="password" value="1234">
+    <input type="text" value="disable-text" disabled>
+
+    <button class="btn-success">Success</button>
+    <button class="btn-danger">Danger</button>
+
+</body>
+</html>
