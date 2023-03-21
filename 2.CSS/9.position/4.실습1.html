@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- reset css -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+
+    <style>
+        article {
+            width: 400px;
+           
+            background: pink;
+            border: 3px solid gray;
+            margin: 30px auto 0;
+            padding: 10px;
+            /* position: relative; */
+        }
+
+        article h1 {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: green;
+            margin-left: 15px;
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            padding-left: 10px;
+            list-style: none;
+            margin-bottom: 5px;
+        }
+
+        ul  li a {
+            color: black;
+            /* list-style: none; */
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            color: blue;
+            text-decoration: underline;  /*이거이거*/
+        }
+
+        ul a:link {
+            text-decoration: none;
+        }
+
+        .absolute a {
+            color: blue;
+            position: absolute;
+            left: 370px;
+            top: 50px;
+            /* right: 10px; */
+            /* top: 10px; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <article>
+        <h1>동물병원 24시</h1>
+        <ul>
+            <li><a href="https://www.naver.com"> 밥 먹이는 시간 지킬 것</a></li>
+            <li><a href="https://www.daum.net">길고양이 주사 맞히기</a></li>
+            <li><a href="https://namu.wiki/">눈 아픈 동물 목에 깔때기 씌우기</a></li>
+            <li><a href="#">매일 목욕 시킬 것</a></li>
+            <li><a href="#">이름없는 애들 이름 짓지 말기</a></li>
+        </ul>
+        <div class="absolute">
+            <a href="#">더보기</a>
+        </div>
+    </article>
+
+</body>
+
+</html>

@@ -17,7 +17,8 @@
 
         section {
             width: 630px;
-           margin: 100px auto 0;
+            margin: 100px auto 0;
+            /*auto는 가로 중앙에 배치한다는 뜻 좌우 여백 균등 분배*/
             background: lightgray;
             border: 2px solid rgb(71, 69, 69);
         }
@@ -28,6 +29,7 @@
             font-size: 28px;
             font-style: initial;
             border-bottom: 3px solid black;
+            padding: 5px;
         }
 
         .intro {
@@ -36,16 +38,19 @@
             color: white;
             padding: 10px;
             font: bold;
+            border-bottom: 3px solid gray;
         }
 
         em {
             color: yellow;
+            font-size: 1.1em;
         }
 
         .gallery {
             background: gray;
             width: 630px;
             height: 260px;
+            padding: 10px 0;
         }
 
         section ul li {
@@ -55,7 +60,8 @@
             margin: 10px 3px 10px;
             padding: 0 3px 5px;
             box-sizing: border-box;
-            float: left; /*이걸 여기에*/
+            float: left;
+            /*이걸 여기에*/
             line-height: 1.1;
             text-align: justify;
             height: 240px;
@@ -64,15 +70,16 @@
 
         #tulip {
             background-color: red;
-            
         }
 
         #tulip h2 {
             width: 140px;
             height: 116px;
             margin: 3px auto 15px;
+            /*intro와의 거리 3, 좌우자동, 글자칸과의 간격 15*/
             background-image: url(./images/tulip.jpg);
-            background-size: 140px 116px;
+            background-size: cover;
+            background-position: 40%;
         }
 
         #jebi {
@@ -84,7 +91,8 @@
             height: 116px;
             margin: 3px auto 15px;
             background-image: url(./images/jebi.jpg);
-            background-size: 140px 116px;
+            background-size: cover;
+            background-position: 40%;
         }
 
         #hobak {
@@ -96,7 +104,8 @@
             height: 116px;
             margin: 3px auto 15px;
             background-image: url(./images/hobak.jpg);
-            background-size: 140px 116px;
+            background-size: cover;
+            background-position: 40%;
         }
 
         #sunflower {
@@ -108,7 +117,8 @@
             height: 116px;
             margin: 3px auto 15px;
             background-image: url(./images/sunflower.jpg);
-            background-size: 140px 116px;
+            background-size: cover;
+            background-position: 20%;
         }
 
         .clearfix::after {
@@ -129,7 +139,7 @@
             표정있는 꽃들을 선호할 것이다.
         </p>
 
-        <ul class="gallery">
+        <ul class="gallery clearfix">
             <li id="tulip">
                 <h2></h2> <!-- 각 h2에 background 속성 사용해서 url로 꽃 이미지 넣기-->
                 <p>너무 화려하지 않으며 고귀한 느낌을 가지고 있다.

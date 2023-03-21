@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position basic</title>
+
+    <!-- 독립적인 물체 위치 옮기는데 유리 여러개는 float이 더 좋다 -->
+
+
+    <style>
+        .container {
+            width: 400px;
+            height: 300px;
+            border: 4px dashed lightgray;
+            margin: 100px 0;
+        }
+
+        .box {
+            width: 150px;
+            height: 100px;
+            background-color: red;
+            border: 4px dashed orange;
+            position: relative;
+            left: 160px;
+            /*왼쪽!에서!(기준으로) 160px 이동해라*/
+            top: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>
