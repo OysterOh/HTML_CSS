@@ -8,14 +8,14 @@ body {
 }
 
 #wrapper {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
 header {
- background-color: #123456;
- padding: 10px;
- color: white;
+    background-color: #123456;
+    padding: 10px;
+    color: white;
 }
 
 header h1 {
@@ -64,6 +64,7 @@ header h1 em {
     color: #662;
     border-bottom: 1px dashed #662;
 }
+
 .container .content {
     background: white;
     float: right;
@@ -103,7 +104,6 @@ header {
     margin: auto;
     text-align: center;
     background: navy;
-    font-family: 'human모음T';
     color: yellow;
     font-size: 20px;
 }
